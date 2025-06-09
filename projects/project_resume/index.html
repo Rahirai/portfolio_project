@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <form id="form">
+      <h1>Create Your Resume</h1>
+      <div class="form-flex">
+        <div>
+          <input type="text" placeholder="Enter your name..." id="name" />
+          <input type="email" placeholder="Enter your email..." id="email" />
+        </div>
+        <div>
+          <input
+            type="url"
+            placeholder="Enter your linkedin url..."
+            id="linkedin"
+          />
+          <input
+            type="text"
+            placeholder="Enter your currect location..."
+            id="address"
+          />
+        </div>
+      </div>
+      <div class="form-flex">
+        <div>
+          <input type="text" placeholder="Enter your role..." id="role" />
+          <input
+            type="tel"
+            placeholder="Enter your mobile number..."
+            id="number"
+          />
+        </div>
+        <div>
+          <input
+            type="number"
+            placeholder="Enter education year..."
+            id="edu-year"
+          />
+          <input type="text" placeholder="Enter education ..." id="edu" />
+        </div>
+      </div>
+
+      <!-- <select name="experience" id="">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Yes">Fresher</option>
+      </select> -->
+
+      <div class="form-flex">
+        <fieldset class="experience">
+          <legend>Work Experience</legend>
+          <select name="experience" id="experience">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>File</legend>
+          <input type="file" id="file" />
+        </fieldset>
+      </div>
+      <div id="check">
+        <label>ADD Skills:</label> <button type="button" id="add">+</button
+        ><br />
+      </div>
+      <fieldset>
+        <legend>Projects</legend>
+        <div class="projectForm">
+          <input type="text" id="projectTitle" placeholder="Project Title" />
+          <input type="text" id="projectTech" placeholder="Technologies Used" />
+          <textarea
+            id="projectDesc"
+            placeholder="Project Description"
+          ></textarea>
+          <button type="button" id="addproject">Add more</button>
+        </div>
+      </fieldset>
+      <textarea
+        placeholder="tell me about yourself"
+        id="text"
+        rows="6"
+      ></textarea>
+
+      <div class="form-flex form-btn">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+
+    <!-- Resume -->
+    <div id="result">
+      <div class="result-inner">
+        <div class="top-box">
+          <div>
+            <h1 id="res-name">Vishal Chauhan</h1>
+            <p id="res-role">Software Developer</p>
+          </div>
+          <div>
+            <div class="line"></div>
+            <img src="./hero.jpg" id="img" alt="" />
+          </div>
+        </div>
+        <div class="result-middle">
+          <hr />
+          <ul>
+            <li id="res-number">+91 123453617</li>
+            <li id="res-email">vishal@gmail.com</li>
+            <li id="res-linkedin">linkedin.com/vishal</li>
+            <li id="res-address">Mohali</li>
+          </ul>
+          <hr />
+        </div>
+        <div class="result-bottom">
+          <div class="summary-box">
+            <h1>Summary</h1>
+            <p id="res-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium numquam at, quasi magni et esse! Consequatur quo
+              tempora veniam ex.
+            </p>
+          </div>
+          <div class="education-box">
+            <h1>Education</h1>
+            <p>
+              Education Year:
+              <span style="font-weight: bold" id="res-year">2025</span>
+            </p>
+            <p>
+              Education Qualification:
+              <span id="res-edu" style="font-weight: bold">B.Tech</span>
+            </p>
+          </div>
+          <div class="skills-box">
+            <h1>Skills</h1>
+            <ul id="skill">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>MERN</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>MERN</li>
+            </ul>
+          </div>
+          <div class="work-box">
+            <h1>Work Experience</h1>
+            <p id="res-work">Yes / No / Fresher</p>
+          </div>
+          <div class="project-box">
+            <h1>Projects</h1>
+            <div id="projectList"></div>
+          </div>
+        </div>
+      </div>
+      <button id="download-btn">Download Resume</button>
+    </div>
+  </body>
+</html>

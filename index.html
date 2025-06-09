@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"
+      defer
+    ></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <nav>
+          <h1>RAHI</h1>
+          <div class="nav-links">
+            <a href="#Home" class="nav-link active">Home</a>
+            <a href="#About" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#Projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contacts</a>
+          </div>
+        </nav>
+      </section>
+      <section id="Home">
+        <div class="home-left">
+          <p class="txt-yellow">Hello!</p>
+          <h1>I'm <span id="element"></span></h1>
+          <p class="summary">
+            A passionate software developer specializing in the MERN stack.I
+            enjoy creating modern, scalable web applications and exploring new
+            technologies to build better and smarter digital solutions. I'm
+            passionate about writing clean code, solving real-world problems,
+            and continuously growing as a developer.
+          </p>
+          <div class="home-btn">
+            <a
+              href="./assests/rahi_resume.png"
+              download="RAHI.pdf"
+              target="_blank"
+              class="resume-download-btn"
+              >Download Resume</a
+            >
+            <a
+              href="https://www.linkedin.com/in/rahi-fullstackdev/"
+              target="_blank"
+              class="hire-me-btn"
+              >Hire Me!</a
+            >
+          </div>
+        </div>
+        <div class="home-right">
+          <img src="./assests/dp.jpg" alt="" />
+        </div>
+      </section>
+      <section id="About">
+        <h1 class="about-logo">About <span class="txt-yellow">Me</span></h1>
+        <p class="about-summary">
+          Here you will find more information about me, what I do, and my
+          current skills mostly in terms of programming and technology
+        </p>
+        <div class="about-detail-section">
+          <div class="about-left">
+            <img src="./assests/dp2.jpg" alt="" />
+          </div>
+          <div class="about-right">
+            <div class="about-detail">
+              <div class="about-detail-left">
+                <h1>Name:</h1>
+                <h1>Date of birth:</h1>
+                <h1>Address:</h1>
+                <h1>Email:</h1>
+                <h1>Phone:</h1>
+              </div>
+              <div class="about-detail-right">
+                <h1>Rahi</h1>
+                <h1>28 June 2002</h1>
+                <h1>Mohali</h1>
+                <h1>rairahi899@gmail.com</h1>
+                <h1>+91 9779841682</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2>My <span class="txt-yellow">Skills</span></h2>
+          <p class="about-summary">
+            Here are some of the technologies and tools I work with to bring
+            ideas to life.
+          </p>
+          <div class="skills-grid">
+            <div class="skill">
+              <div class="skill-percentage">
+                <h3>HTML</h3>
+                <h3>90%</h3>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-percentage">
+                <h3>CSS</h3>
+                <h3>90%</h3>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-percentage">
+                <h3>JavaScript</h3>
+                <h3>55%</h3>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 55%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-percentage">
+                <h3>MERN Stack</h3>
+                <h3>40%</h3>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 40%"></div>
+              </div>
+            </div>
+           
+            <div class="skill">
+              <div class="skill-percentage">
+                <h3>Tailwind CSS</h3>
+                <h3>70%</h3>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 70%"></div>
+              </div>
+            </div>
+           
+
+            <div class="skill">
+              <div class="skill-percentage">
+                <h3>Git & Github</h3>
+                <h3>50%</h3>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 50%"></div>
+              </div>
+            </div>
+        
+          </div>
+          <img
+            id="skill-logo"
+            src=""
+            alt="Skill Logo"
+            height="150"
+            width="150"
+          />
+        </div>
+      </section>
+
+      <section class="projects-section" id="Projects">
+        <div class="container">
+          <div class="section-title">
+            <h2>My <span class="txt-yellow">Projects</span></h2>
+            <p class="about-summary">
+              Discover my projects showcasing my skills in web development,
+              ranging from simple apps to full-stack MERN applications.
+            </p>
+          </div>
+          <div class="projects-grid" id="projectsGrid">
+            <!-- Project Cards will go here -->
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-title">
+          <h2>Contact <span class="txt-yellow">Me</span></h2>
+          <p class="about-summary">
+            Feel free to reach out to me for any inquiries, collaborations, or
+            just to say hello!
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-form">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" placeholder="Enter your name..." />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" placeholder="Enter your email..." />
+            </div>
+            <div>
+              <label for="textarea">Message:</label>
+              <textarea
+                name="textarea"
+                placeholder="Enter your message..."
+                id="textarea"
+              ></textarea>
+            </div>
+            <div>
+              <button class="submit-btn">Submit</button>
+            </div>
+          </div>
+          <div class="contact-img">
+            <img src="./assests/dp2.jpg" alt="Contact Image" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer-content">
+          <p class="footer-text">
+            Made with 💛 By - <span class="txt-yellow">Rahi</span>
+          </p>
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/Rahiraia" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/rahi-fullstackdev/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

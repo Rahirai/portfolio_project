@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women's Clothing</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Ecommerce</h1>
+      <div>
+        <a href="../index.html">Home</a>
+        <!-- <button id="all-products">All Products</button> -->
+        <a href="./electronics.html">Electronics</a>
+        <a href="./jewelery.html">Jewelery</a>
+        <a href="./menClothing.html">Men's Clothing</a>
+        <a href="./womenClothing.html">Women's Clothing</a>
+      </div>
+    </nav>
+
+    <div id="box"></div>
+
+    <script>
+      async function fetchAllProducts() {
+        try {
+          const res = await fetch(
+            "https://fakestoreapi.com/products/category/women's clothing"
+          );
+          const data = await res.json();
+
+          data.map((product) => {
+            box.innerHTML += `
+                  <div class="result">
+                <img src="${product.image}" alt="" />
+                <h1>${product.title}</h1>
+                <p class="price">${product.price}</p>
+                <p>  ${product.description
+                  .split(" ")
+                  .slice(0, 20)
+                  .join(" ")}...</p>
+                <button>Buy Now</button>
+              </div>
+                `;
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      fetchAllProducts();
+    </script>
+  </body>
+</html>
